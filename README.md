@@ -59,13 +59,27 @@ A comprehensive Exploratory Data Analysis (EDA) was conducted to understand the 
 ### Key EDA Steps
 - Initial Inspection: Reviewed dataset shape, data types, summary statistics, and unique values
 
+<img width="2589" height="2185" alt="Comorbidities" src="https://github.com/user-attachments/assets/153e1fb3-ce85-4f3d-878d-b3d12e5a88ad" />
+
+![BMI Distribution](https://github.com/user-attachments/assets/ae05aa02-093e-40e8-b05a-2678271401fc)
+
+<img width="2138" height="1433" alt="BMI Categories" src="https://github.com/user-attachments/assets/b24a8370-f249-4975-a230-9bb1397c110b" />
+
 - Missing Value Analysis: Identified missingness patterns and assessed whether imputation or feature removal was required.
 
-- Distribution Analysis: Visualized distributions of key clinical variables such as age, BMI, gestational age, and antenatal visits.
+- Distribution Analysis: Visualized distributions of key clinical variables such as Blood Pressure, BMI.
+  
+  <img width="4136" height="1437" alt="BP Distribution" src="https://github.com/user-attachments/assets/a480b10e-f81a-4d7b-b627-ffe8ea81f5e7" />
+
+  <img width="2082" height="1664" alt="BMI" src="https://github.com/user-attachments/assets/6697424b-5a8a-45b6-a71e-c93e7c94639f" />
+
 
 - Risk Factor Exploration: Compared distributions of known risk factors (e.g., chronic hypertension, diabetes, nulliparity) between preeclampsia and non‑preeclampsia groups.
 
 - Correlation Heatmap: Examined relationships among numerical features to detect multicollinearity and clinically meaningful associations.
+
+  <img width="3902" height="3541" alt="feature_correlation" src="https://github.com/user-attachments/assets/f5682a9f-d895-46ea-9948-4f1691a64092" />
+
 
 - Class Balance Check: Assessed the distribution of the target variable to understand imbalance and inform model selection and evaluation.
 
@@ -119,7 +133,7 @@ XGBoost performs best overall, but Logistic Regression (Tuned) offers the best b
 ## Feature Importance (Top Predictors)
 The tuned Logistic Regression model identified the following as the strongest predictors of preeclampsia:
 
-![Top Feature Coefficients](https://github.com/user-attachments/assets/f07297bb-a8e8-47ba-926d-ae40ab087073)
+![Top Feature Coefficients](https://github.com/user-attachments/assets/92b5e647-9799-47a2-b3bf-a2837203c1ca)
 
 
 ### Top Risk‑Increasing Factors
